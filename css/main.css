@@ -1,0 +1,586 @@
+ ::-webkit-scrollbar{
+    background-color: brown;
+    
+ }
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+ 
+ html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    /* background-color: black; */
+    
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.container { 
+margin-left: auto;
+margin-right: auto;
+padding-right: 15px;
+padding-left: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  /* start the header */
+
+  .main-header {
+background-color: #c89537;  
+/* height: 75px; */
+position: sticky;
+top: 0;
+z-index: 1;
+   
+  }
+.container .header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+   
+}
+
+@media (max-width: 767px) {
+    .container .header .logo    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+.container .header .logo h1 {
+    font-family: "Playwrite BE WAL", cursive;
+    font-size: 16px;
+    color: black;
+    opacity: 0.7;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    padding-inline: 10px;
+    
+}
+
+
+
+li {
+    display: inline-block;
+   
+}
+
+
+
+.container .header nav ul li a {
+   color: black;
+    margin-inline: 10px;
+    text-transform: capitalize;
+    font-family: "Libre Baskerville", serif;
+    position: relative;
+   
+    
+
+}
+
+
+
+.header .logo nav ul > li > a::after {
+    content: "";
+    width: 0 ;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 2px;
+    top: 30px;
+}
+
+
+.container .header nav ul li a:hover::after{
+  
+    width: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
+    /* /* height: 90px; */
+    border: solid red 3px;
+    animation: title-bgc 2s infinite alternate;
+    -webkit-animation:;
+}
+
+
+
+.title p {
+    color: wheat;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 15px;
+    font-weight: 100;
+    animation: title-color infinite 2s alternate-reverse;
+    -webkit-animation: title-color infinite 2s alternate-reverse;
+    word-spacing: 6px;
+}
+
+@media (max-width: 767px) {
+    .title p   {
+     letter-spacing: 0;
+     word-spacing: 0;
+     font-size: 30px;
+    }
+  }
+
+/* start landing */
+
+.img-landing {
+padding-bottom: 20px;
+}
+
+.img-landing .landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.img-landing .landing .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-landing .landing .boxes img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.img-landing .landing .boxes a {
+    background-color: black;
+    position: absolute;
+    padding: 20px;
+    text-transform: capitalize;
+    color: wheat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* start of the offers section */
+.offers {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.offers  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+@media (max-width: 767px) {
+    .offers   {
+    flex-direction: column;
+    /* justify-content: center; */
+    }
+  }
+
+
+
+.offers  .offer-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    border: 2px solid black;
+    padding-inline: 60px;
+    padding-block: 20px ;
+    width: 40%;
+    margin: 20px;
+   
+}
+
+@media (max-width: 767px) {
+    .offers  .offer-code    {
+   width: 100%;
+   margin-block: 10px;
+  /* margin-block: 30px; */
+   padding-inline: 10px;
+   padding-block: 10px;
+ gap: 10px;
+   flex-direction: column;
+    }
+  }
+
+
+
+.offers  .offer-code p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+.offers  .offer-code p:not(:first-child){
+   background-color:   #c89537;;
+   
+}
+
+.offers  .offer-code p span {
+background-color: brown;  
+padding-inline: 40px;
+}
+/* end of offers */
+
+/* start of the men offers */
+
+.men-offers {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.men-offers .container {
+   
+    
+}
+
+.men-offers .container .men-offers-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+   
+}
+
+.men-offers .container .men-offers-img img {
+    width: 100%;
+    max-width: 100%;
+    
+    
+   
+   
+}
+
+.men-offers .container .men-offers-img img:hover {
+    transform: rotate(3deg) scale(1.1);
+    -webkit-transform: rotate(3deg) scale(1.1);
+    -moz-transform: rotate(3deg) scale(1.1);
+    -ms-transform: rotate(3deg) scale(1.1);
+    -o-transform: rotate(3deg) scale(1.1);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 0.5;
+}
+
+/* start of the popular-section */
+
+.popular-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-section-img {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-section-img img {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.product-section-img img:hover {
+    transform: rotate(3deg) scale(1.1);
+    -webkit-transform: rotate(3deg) scale(1.1);
+    -moz-transform: rotate(3deg) scale(1.1);
+    -ms-transform: rotate(3deg) scale(1.1);
+    -o-transform: rotate(3deg) scale(1.1);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* start of the girls  */
+
+.girls-section {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.none {
+    width: 100%;
+}
+
+
+
+.girls-section .container .girls-section-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px ;
+  background-color: #c89537;
+  border-radius:20px ;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+}
+
+
+.girls-section .container .girls-section-img img {
+    width: 100%;
+    cursor: pointer;
+
+    
+  
+}
+
+.girls-section .container .girls-section-img img:hover {
+    transform: rotate(3deg) scale(1.1);
+    -webkit-transform: rotate(3deg) scale(1.1);
+    -moz-transform: rotate(3deg) scale(1.1);
+    -ms-transform: rotate(3deg) scale(1.1);
+    -o-transform: rotate(3deg) scale(1.1);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* summer girls */
+
+.summer-girls {
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+
+.summer-girls img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* start before footer */
+
+.before-footer {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.before-footer .container {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.before-footer .container .sub  {
+    width: 500px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.before-footer .container .sub h1 {
+font-size: 20px;
+}
+
+.before-footer .container .sub p {
+    line-height: 3;
+}
+
+
+.before-footer .container .sub input {
+   padding: 10px;
+}
+
+
+.before-footer .container .app {
+    /* width: 500px; */
+    /* border: 2px solid red; */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.before-footer .container .app h1{
+margin: 0;
+}
+
+
+.before-footer .container .app p {
+    line-height: 3;
+}
+
+.before-footer .container .app img {
+    width: 20%;
+    max-width: 100%;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+/* start the footer */
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .footer-title h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0;
+    color: #c89537;
+}
+
+.footer .footer-contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: start;
+    background-color: rebeccapurple;
+    line-height: 1.7;
+    width: 100px;
+}
+
+.footer .footer-contact p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+
+
+
+@keyframes title-moving {
+   100% {
+        opacity: 0.2;
+    }
+
+    0% , 50% {
+        opacity: 1;
+    }
+}
+
+@keyframes title-color {
+    0% , 50% {
+         color: black;
+     }
+
+     75% {
+        color: 
+        #08c0e4;
+     }
+
+     90% {
+        color: #c89537;
+     }
+ 
+   100% {
+         color: brown;
+     }
+ }
+
+
+ @keyframes title-bgc {
+    0% , 50% {
+         background-color: brown;
+     }
+
+     75% {
+        background-color: 
+        #08c0e4;
+     }
+
+     90% {
+        background-color: #c89537;
+     }
+ 
+   100% {
+         background-color: wheat;
+     }
+ }
+
+
+
+
