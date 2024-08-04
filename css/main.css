@@ -256,13 +256,14 @@ padding-bottom: 20px;
 
 @media (max-width: 767px) {
     .offers  .offer-code    {
-   width: 100%;
+   width: 80%;
    margin-block: 10px;
   /* margin-block: 30px; */
    padding-inline: 10px;
    padding-block: 10px;
  gap: 10px;
    flex-direction: column;
+/* height: 170px; */
     }
   }
 
