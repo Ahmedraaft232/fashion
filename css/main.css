@@ -141,7 +141,7 @@ li {
     justify-content: center;
     width: 100%; 
      /* height: 90px; */
-    border: solid black 3px;
+    border: solid black 1px;
     animation: title-bgc 2s infinite alternate;
    
 }
