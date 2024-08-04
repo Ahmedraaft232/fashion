@@ -18,10 +18,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-body {
-    /* background-color: black; */
-    
-}
+
 ul {
     list-style-type: none;
 }
@@ -142,11 +139,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; */
-    /* /* height: 90px; */
+    width: 100%; 
+     /* height: 90px; */
     border: solid red 3px;
     animation: title-bgc 2s infinite alternate;
-    -webkit-animation:;
+   
 }
 
 
@@ -213,6 +210,14 @@ padding-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width: 767px) {
+    .img-landing .landing .boxes a   {
+     top: 75%;
+     background-color: red;
+     padding: 5px;
+     left: 80px;
+    }
+  }
 
 /* start of the offers section */
 .offers {
@@ -291,10 +296,6 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-.men-offers .container {
-   
-    
-}
 
 .men-offers .container .men-offers-img {
     display: grid;
