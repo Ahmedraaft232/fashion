@@ -457,6 +457,12 @@ font-size: 20px;
     line-height: 3;
 }
 
+@media (max-width: 767px) {
+    .before-footer .container .sub p    {
+        line-height: 1.8;
+    }
+  }
+
 
 .before-footer .container .sub input {
    padding: 10px;
@@ -483,7 +489,11 @@ margin: 0;
 .before-footer .container .app p {
     line-height: 3;
 }
-
+@media (max-width: 767px) {
+    .before-footer .container .app p     {
+        line-height: 1.8;
+    }
+  }
 .before-footer .container .app img {
     width: 20%;
     max-width: 100%;
