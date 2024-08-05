@@ -502,6 +502,12 @@ margin: 0;
 
 }
 
+@media (max-width: 767px) {
+    .before-footer .container .app img   {
+       width: 80%;
+    }
+  }
+
 /* start the footer */
 
 .footer {
