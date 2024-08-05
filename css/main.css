@@ -468,6 +468,12 @@ font-size: 20px;
    padding: 10px;
 }
 
+@media (max-width: 767px) {
+    .before-footer .container .sub input    {
+       padding: 15px;
+    }
+  }
+
 
 .before-footer .container .app {
     /* width: 500px; */
